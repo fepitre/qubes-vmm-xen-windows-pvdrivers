@@ -15,18 +15,18 @@
                            Guid='{D464EDB0-CF0D-4FE5-A160-210BF246C3A4}'>
                            
                     <File Id='XenifaceInf'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xeniface.inf'
+                          Source='$(env.QUBES_BIN)\xeniface.inf'
                           KeyPath='yes' />
                     <File Id='XenifaceCat'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xeniface.cat' />
+                          Source='$(env.QUBES_BIN)\xeniface.cat' />
                     <File Id='XenifaceSys'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xeniface.sys' />
+                          Source='$(env.QUBES_BIN)\xeniface.sys' />
                     <File Id='XenagentDll'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xenagent.dll' />
+                          Source='$(env.QUBES_BIN)\xenagent.dll' />
                     <File Id='XenagentExe'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xenagent.exe' />
+                          Source='$(env.QUBES_BIN)\xenagent.exe' />
                     <File Id='XenifaceCoinst'
-                          Source='xeniface\xeniface\$(env.DDK_ARCH)\xeniface_coinst.dll' />
+                          Source='$(env.QUBES_BIN)\xeniface_coinst.dll' />
                     <difx:Driver />
                 </Component>
             </Directory>
@@ -36,7 +36,7 @@
                        Guid='{1BA9B085-AFC2-4248-9DF2-5E85692DC707}'>
                        
                 <File Id='xencontrol'
-                      Source='xeniface\xeniface\$(env.DDK_ARCH)\xencontrol.dll'
+                      Source='$(env.QUBES_BIN)\xencontrol.dll'
                       KeyPath='yes' />
                 <File Id='libxenvchan'
                       Source='bin\$(env.DDK_ARCH)\libxenvchan.dll' />

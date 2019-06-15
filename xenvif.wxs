@@ -10,14 +10,14 @@
                            Guid='{90BC2F5A-7414-4FF6-96E4-5789DDB1AECF}'>
                            
                     <File Id='XenvifInf'
-                          Source='xenvif\xenvif\$(env.DDK_ARCH)\xenvif.inf'
+                          Source='$(env.QUBES_BIN)\xenvif.inf'
                           KeyPath='yes' />
                     <File Id='XenvifCat'
-                          Source='xenvif\xenvif\$(env.DDK_ARCH)\xenvif.cat' />
+                          Source='$(env.QUBES_BIN)\xenvif.cat' />
                     <File Id='XenvifSys'
-                          Source='xenvif\xenvif\$(env.DDK_ARCH)\xenvif.sys' />
+                          Source='$(env.QUBES_BIN)\xenvif.sys' />
                     <File Id='XenvifCoinst'
-                          Source='xenvif\xenvif\$(env.DDK_ARCH)\xenvif_coinst.dll' />
+                          Source='$(env.QUBES_BIN)\xenvif_coinst.dll' />
                     <difx:Driver />
                 </Component>
             </Directory>

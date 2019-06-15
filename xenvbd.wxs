@@ -10,18 +10,18 @@
                            Guid='{87BAEE21-4695-4B75-A484-0A6136B70516}'>
                            
                     <File Id='XenvbdInf'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xenvbd.inf'
+                          Source='$(env.QUBES_BIN)\xenvbd.inf'
                           KeyPath='yes' />
                     <File Id='XenvbdCat'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xenvbd.cat' />
+                          Source='$(env.QUBES_BIN)\xenvbd.cat' />
                     <File Id='XenvbdSys'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xenvbd.sys' />
+                          Source='$(env.QUBES_BIN)\xenvbd.sys' />
                     <File Id='XendiskSys'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xendisk.sys' />
+                          Source='$(env.QUBES_BIN)\xendisk.sys' />
                     <File Id='XencrshSys'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xencrsh.sys' />
+                          Source='$(env.QUBES_BIN)\xencrsh.sys' />
                     <File Id='XenvbdCoinst'
-                          Source='xenvbd\xenvbd\$(env.DDK_ARCH)\xenvbd_coinst.dll' />
+                          Source='$(env.QUBES_BIN)\xenvbd_coinst.dll' />
                     <difx:Driver />
                 </Component>
             </Directory>

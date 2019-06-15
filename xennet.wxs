@@ -10,14 +10,14 @@
                            Guid='{AEFEC088-0B30-4EFC-8416-5E3675AC03D0}'>
                            
                     <File Id='XennetInf'
-                          Source='xennet\xennet\$(env.DDK_ARCH)\xennet.inf'
+                          Source='$(env.QUBES_BIN)\xennet.inf'
                           KeyPath='yes' />
                     <File Id='XennetCat'
-                          Source='xennet\xennet\$(env.DDK_ARCH)\xennet.cat' />
+                          Source='$(env.QUBES_BIN)\xennet.cat' />
                     <File Id='XennetSys'
-                          Source='xennet\xennet\$(env.DDK_ARCH)\xennet.sys' />
+                          Source='$(env.QUBES_BIN)\xennet.sys' />
                     <File Id='XennetCoinst'
-                          Source='xennet\xennet\$(env.DDK_ARCH)\xennet_coinst.dll' />
+                          Source='$(env.QUBES_BIN)\xennet_coinst.dll' />
                     <difx:Driver />
                 </Component>
             </Directory>
