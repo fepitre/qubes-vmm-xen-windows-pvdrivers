@@ -39,7 +39,7 @@
                       Source='$(env.QUBES_BIN)\xencontrol.dll'
                       KeyPath='yes' />
                 <File Id='libxenvchan'
-                      Source='bin\$(env.DDK_ARCH)\libxenvchan.dll' />
+                      Source='$(env.QUBES_BIN)\libxenvchan.dll' />
             </Component>
         </DirectoryRef>
     </Fragment>
