@@ -46,6 +46,11 @@ xcopy /y xeniface\include\xencontrol.h include\
 xcopy /y xeniface\include\xeniface_ioctls.h include\
 xcopy /y xeniface\xeniface\%DDK_ARCH%\xencontrol* bin\%DDK_ARCH%\
 
+:: copy drivers itself
+for %%g in (xenbus xeniface xenvbd xenvif xennet) do (
+        xcopy /y %%g\%%g\%DDK_ARCH%\* bin\%DDK_ARCH%\
+    )
+
 echo *** Build OK ***
 exit /b 0
 
